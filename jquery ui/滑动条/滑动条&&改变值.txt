@@ -1,0 +1,12 @@
+
+            $("#slide").slider({
+                range :true,
+                value : 1,
+                min : 0,
+                max : 100,
+                slide :function(event, ui){
+                    $("#val").text(ui.value);
+                }
+            });
+           $("#val").text($("#slide").slider("value"));
+        });

@@ -1,0 +1,9 @@
+function unque(arr){
+                var temp = new Array();
+                for(var i in  arr){
+                     if (temp.indexOf(arr[i])==-1){
+                         temp.push(arr[i]);
+                     }
+                }
+                return temp;
+            }
